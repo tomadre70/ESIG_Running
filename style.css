@@ -1,0 +1,30 @@
+
+body {
+  margin: 0; /* Enlève les marges par défaut du body */
+  height: 100vh; /* Assure que le body occupe 100% de la hauteur de la vue */
+  background: black;
+}
+h1 {
+  color: #c52626; /* Couleur du texte */
+  font-family: 'Anton', sans-serif; /* Police du texte */
+  margin: 20px;
+}
+h2,h5{
+  color: white;
+}
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hauteur pour remplir l'écran */
+  background-image: url('https://www.c-solution.fr/wp-content/uploads/2023/08/a35da2b6ec04d5a4a99cf9df57e78287-770x507.jpg'); /* Image de fond */
+  background-size: cover; /* Couvre tout l'espace */
+  background-position: center; /* Centre l'image */
+  background-attachment: fixed; /* Image de fond fixe lors du défilement */
+  color: #ffffff; /* Couleur du texte */
+}
+.text-area {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour la lisibilité */
+  border-radius: 10px; /* Coins arrondis */
+}
