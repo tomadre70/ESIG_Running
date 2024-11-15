@@ -2,8 +2,22 @@
     $titre_page="Connexion";
     include 'header.inc.php';
 ?>
-<h1>Hello</h1>
-<h2>Hi</h2>
-<h5>No</h5>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolor voluptate iste consequuntur! Rerum beatae odio repellendus quas consequatur natus blanditiis nam! Inventore eum at ad omnis nesciunt illo nemo.</p>
-<a href="./accueil.php"><h1>Aller à la page d'accueil</h1></a>
+
+<section class="centered-container">
+    <h1>Connexion Utilisateur</h1>
+    <form action="">
+        <label for="id">Identifiant</label>
+        <input type="text" id="id" 
+        placeholder="Entrer votre identifiant" />
+        <br/>
+        
+        <label for="pwd">Mot de passe</label>
+        <input type="password" id="pwd" 
+        placeholder="Mot de passe" />
+
+        <br />
+        
+        <input type="submit" value="Connexion"/>
+    </form>
+    <a href="./accueil.php"><h2>Retour à l'accueil</h2></a>
+</section>

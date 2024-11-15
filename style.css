@@ -10,21 +10,131 @@ h1 {
   margin: 20px;
 }
 h2,h5{
-  color: white;
+  color: rgb(101, 2, 144);
 }
 .content-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Hauteur pour remplir l'écran */
-  background-image: url('https://www.c-solution.fr/wp-content/uploads/2023/08/a35da2b6ec04d5a4a99cf9df57e78287-770x507.jpg'); /* Image de fond */
-  background-size: cover; /* Couvre tout l'espace */
-  background-position: center; /* Centre l'image */
-  background-attachment: fixed; /* Image de fond fixe lors du défilement */
+  height: 100vh;
+  background-image: url('https://icon2.cleanpng.com/20240403/tip/transparent-marathon-running-runners-finish-line-sports-team-runners-in-line-racing-towards-finish-line660d94e9e05037.41763052.webp' ); /* Image en fond */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #ffffff; /* Couleur du texte */
 }
 .text-area {
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour la lisibilité */
-  border-radius: 10px; /* Coins arrondis */
+  padding: 15px; /* Espacement interne */
+  background-color: red; /* Fond rouge */
+  border: 2px solid red; /* Bordure rouge */
+  color: white; /* Texte en blanc */
+  border-radius: 20px; /* Coins arrondis */
+  
+}
+#a-propos p{
+  text-align: center;
+
+}
+/* Styles pour centrer le formulaire */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  width: 100vw; /* Prend toute la largeur de la fenêtre */
+  flex-direction: column;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label,
+form input {
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  margin-top: 10px;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #343a40; /* Couleur de fond sombre */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Ligne de séparation */
+  color: #ffffff; /* Couleur du texte */
+}
+
+.navbar a.navbar-brand {
+  color: #ffffff; /* Couleur du lien principal */
+  text-decoration: none; /* Pas de soulignement */
+  font-size: 1.5rem; /* Taille du texte */
+  font-weight: bold;
+}
+
+.navbar a.navbar-brand:hover {
+  color: #ffc107; /* Couleur de survol */
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+  color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Espacement entre les éléments */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #343a40; /* Couleur du texte au survol */
+  background-color: #ffc107; /* Couleur de fond au survol */
+}
+
+[data-bs-theme="dark"] {
+  background-color: #343a40; /* Couleur de fond */
+  color: #ffffff; /* Couleur de texte */
+}
+.navbar-brand {
+  color: red !important; /* Force la couleur rouge malgré Bootstrap */
+}
+
+.navbar-brand:hover {
+  color: darkred !important; /* Rouge plus foncé au survol */
+}
+.taille-max-img{
+  max-width: 20vw;
+  max-height: 20vw;
+}
+.marge-row{
+  margin-bottom: 1vw;
+  padding-top: 5vw;
+}
+.bg-sombre{
+  background: black;
 }
