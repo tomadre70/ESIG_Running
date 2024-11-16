@@ -138,3 +138,126 @@ form input[type="submit"] {
 .bg-sombre{
   background: black;
 }
+
+/*formulaire à gauche*/
+
+.form-section {
+  max-width: 400px; /* Limite la largeur de la section */
+  margin-left: 20px; /* Décale la section sur la gauche */
+  margin-top: 20px; /* Espace en haut */
+  padding: 20px; /* Espacement intérieur */
+  background-color: #ffffff; /* Fond blanc pour contraste */
+  border: 1px solid #ddd; /* Bordure légère */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style des en-têtes */
+.form-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #007bff; /* Couleur bleue */
+}
+
+/* Style des labels */
+.form-section form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Champs de formulaire */
+.form-section form input[type="text"],
+.form-section form input[type="date"],
+.form-section form input[type="time"],
+.form-section form input[type="number"],
+.form-section form textarea {
+  width: 100%; /* Occupe toute la largeur */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Style du textarea */
+.form-section form textarea {
+  height: 100px;
+  resize: none; /* Désactive le redimensionnement */
+}
+
+/* Bouton d'envoi */
+.form-section form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.form-section form button:hover {
+  background-color: #0056b3; /* Couleur plus sombre au survol */
+}
+
+.container {
+  display: flex; /* Disposition en ligne pour aligner les sections */
+  gap: 20px; /* Espacement entre les sections */
+  padding: 20px;
+}
+
+/* Section Liste des Entraînements */
+.trainings-section {
+  flex-grow: 1; /* S'étend pour occuper tout l'espace restant */
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 500px; /* Limite la hauteur pour éviter les débordements */
+  overflow-y: auto; /* Ajoute un défilement vertical si le contenu dépasse */
+}
+
+.trainings-section ul {
+  list-style: none; /* Supprime les puces */
+  padding: 0;
+  margin: 0;
+}
+
+.trainings-section li {
+  margin-bottom: 10px;
+}
+
+/* Boutons Dépliants */
+.collapsible {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.collapsible.active {
+  background-color: #0056b3;
+}
+
+.content {
+  display: none; /* Masque les détails par défaut */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
